@@ -21,7 +21,7 @@ Grocify aims to be a clean and modern grocery shopping site layout, focusing on 
 
 ## Screenshots
 
-*Add a screenshot of the current progress here, if available.*
+
 
 ## Credits
 
