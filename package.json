@@ -1,0 +1,25 @@
+{
+  "name": "grosify",
+  "version": "1.0.0",
+  "description": "Grocery shopping landing page",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'No build step needed'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d src"
+  },
+  "keywords": [],
+  "author": "Praneeth",
+  "license": "MIT",
+  "homepage": "https://codeneeth.github.io/grocify-project",
+  "dependencies": {
+    "tailwindcss": "^4.1.5",
+    "tailwindcss/cli": "^4.1.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "live-server": "^1.2.2"
+  }
+}
+

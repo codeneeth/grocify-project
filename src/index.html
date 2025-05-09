@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grosify</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        crossorigin="anonymous" />
+</head>
+
+<body class="relative text-[#1E1E1E] font-poppins">
+    <img src="assets/Image.png" alt="bg" class="fixed top-0 left-0 w-full h-full object-cover -z-10" />
+
+    <header class="text-white w-full h-16 flex items-center justify-between px-4 md:px-8 shadow-xl z-20 relative">
+        <h1 class="text-2xl font-medium">Grosify</h1>
+        <nav class="hidden md:block">
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-[#f0e741d2]">Home</a></li>
+                <li><a href="#" class="hover:text-[#f0e741d2]">About</a></li>
+                <li><a href="#" class="hover:text-[#f0e741d2]">Orders</a></li>
+                <li><a href="#" class="hover:text-[#f0e741d2]">Services</a></li>
+                <li><a href="#" class="hover:text-[#f0e741d2]">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="flex items-center space-x-4">
+            <i class="fa-solid fa-magnifying-glass text-xl hover:text-[#f0e741d2]"></i>
+            <i class="fa-solid fa-cart-shopping text-xl hover:text-[#f0e741d2]"></i>
+            <i class="fa-solid fa-user text-xl hover:text-[#f0e741d2]"></i>
+            <button id="menuBtn" class="md:hidden focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobileMenu" class="md:hidden absolute top-16 left-0 w-full bg-black/90 text-white px-6 py-4 hidden z-10">
+        <ul class="space-y-2">
+            <li><a href="#" class="block hover:text-[#f0e741d2]">Home</a></li>
+            <li><a href="#" class="block hover:text-[#f0e741d2]">About</a></li>
+            <li><a href="#" class="block hover:text-[#f0e741d2]">Orders</a></li>
+            <li><a href="#" class="block hover:text-[#f0e741d2]">Services</a></li>
+            <li><a href="#" class="block hover:text-[#f0e741d2]">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="max-w-6xl mx-auto px-4 mt-20 flex flex-col md:flex-row items-center justify-between py-12 gap-10">
+        <div class="md:w-1/2 flex flex-col items-start space-y-6 text-white">
+            <h2 class="text-4xl md:text-6xl font-bold">Grocery Shopping</h2>
+            <p class="text-white/80 max-w-md">Fresh every day. Your one-stop shop for all your grocery needs. Delivered
+                fast, fresh and free.</p>
+            <button
+                class="bg-[#f0e741] hover:bg-[#f0e741d2] text-black font-semibold py-3 px-6 rounded-lg shadow-lg transition hover:-translate-y-1">
+                Shop Now
+            </button>
+        </div>
+        <div class="md:w-1/2 w-full flex justify-center">
+            <img src="assets/grocery-image.png" alt="Hero" class="w-full max-w-[400px] md:max-w-[90%] h-auto" />
+        </div>
+    </section>
+
+    <footer class="mt-16 px-6 py-8 bg-black/70 text-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h2 class="text-2xl font-semibold">Grosify</h2>
+                <p class="text-sm text-gray-300">Your trusted grocery partner.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram text-2xl"></i></a>
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-whatsapp text-2xl"></i></a>
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fa-solid fa-headset text-2xl"></i></a>
+            </div>
+            <div class="text-sm text-gray-400 text-center md:text-right leading-relaxed">
+                <p>&copy; 2025 Grosify. All rights reserved.</p>
+                <p>Made with <span class="text-red-500">♥</span> by <a href="https://github.com/codeneeth"
+                        target="_blank" class="text-white font-medium hover:underline">Praneeth</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
