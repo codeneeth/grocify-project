@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruits & Vegetables - Grocify</title>
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  crossorigin="anonymous" />
+  <link href="../assets/css/output.css" rel="stylesheet" />
+</head>
+<body class="bg-[#121212] text-white font-sans">
+    <!-- Navbar -->
+    <header class="bg-[#121212] shadow-md shadow-black/50 border-b border-white">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold">Grocify</div>
+  
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center space-x-6">
+          <a href="/index.html" class="hover:text-[#f0e741d2]">Home</a>
+          <a href="/src/pages/catalog.html" class="hover:text-[#f0e741d2]">Shop</a>
+          <a href="/orders" class="hover:text-[#f0e741d2]">Orders</a>
+          <a href="/contact" class="hover:text-[#f0e741d2]">Contact</a>
+        </nav>
+  
+        <!-- Icons -->
+        <div class="flex items-center space-x-4">
+          <i class="fas fa-search text-lg hover:text-[#f0e741d2] cursor-pointer"></i>
+          <i class="fas fa-shopping-cart text-lg hover:text-[#f0e741d2] cursor-pointer"></i>
+          <i class="fas fa-user text-lg hover:text-[#f0e741d2] cursor-pointer"></i>
+  
+          <!-- Mobile Menu Button -->
+          <button id="menuBtn" class="md:hidden text-white text-xl">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+  
+      <!-- Mobile Nav Menu -->
+      <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 space-y-2">
+        <a href="/index.html" class="block hover:text-[#f0e741d2]">Home</a>
+        <a href="/src/pages/catalog.html" class="block hover:text-[#f0e741d2]">Shop</a>
+        <a href="/orders" class="block hover:text-[#f0e741d2]">Orders</a>
+        <a href="/contact" class="block hover:text-[#f0e741d2]">Contact</a>
+      </div>
+    </header>
+  <div class="max-w-6xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold mb-2 text-center">Fruits & Vegetables</h1>
+    <p class="text-center text-green-700 font-medium mb-8">Fresh products delivered fast to your doorstep! 🚚💨</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+      <!-- cards -->
+      <div class="bg-[#1c1c1c] rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col items-center">
+        <img src="../assets/images/apple.png" alt="Apple" class="w-32 h-32 object-cover rounded mb-4">
+        <h2 class="font-semibold text-lg">Apple</h2>
+        <p class="text-green-600 font-bold mt-1">₹120 / kg</p>
+        <div class="flex gap-2 mt-3">
+          <button class="px-3 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded transition">Add to Cart</button>
+          <button class="px-3 py-2 bg-green-500 hover:bg-green-600 text-white rounded transition">Buy Now</button>
+        </div>
+      </div>
+
+   
+      <div class="bg-[#1c1c1c] rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col items-center">
+        <img src="../assets/images/banana.png" alt="Banana" class="w-32 h-32 object-cover rounded mb-4">
+        <h2 class="font-semibold text-lg">Banana</h2>
+        <p class="text-green-600 font-bold mt-1">₹60 / dozen</p>
+        <div class="flex gap-2 mt-3">
+          <button class="px-3 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded transition">Add to Cart</button>
+          <button class="px-3 py-2 bg-green-500 hover:bg-green-600 text-white rounded transition">Buy Now</button>
+        </div>
+      </div>
+
+    
+      <div class="bg-[#1c1c1c] rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col items-center">
+        <img src="../assets/images/carrots.png" alt="Carrot" class="w-32 h-32 object-cover rounded mb-4">
+        <h2 class="font-semibold text-lg">Carrot</h2>
+        <p class="text-green-600 font-bold mt-1">₹45 / kg</p>
+        <div class="flex gap-2 mt-3">
+          <button class="px-3 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded transition">Add to Cart</button>
+          <button class="px-3 py-2 bg-green-500 hover:bg-green-600 text-white rounded transition">Buy Now</button>
+        </div>
+      </div>
+
+   
+      <div class="bg-[#1c1c1c] rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col items-center">
+        <img src="../assets/images/tomatos.png" alt="Tomato" class="w-32 h-32 object-cover rounded mb-4">
+        <h2 class="font-semibold text-lg">Tomato</h2>
+        <p class="text-green-600 font-bold mt-1">₹30 / kg</p>
+        <div class="flex gap-2 mt-3">
+          <button class="px-3 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded transition">Add to Cart</button>
+          <button class="px-3 py-2 bg-green-500 hover:bg-green-600 text-white rounded transition">Buy Now</button>
+        </div>
+      </div>
+
+
+      <div class="bg-[#1c1c1c] rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col items-center">
+        <img src="../assets/images/brocolli.png" alt="Broccoli" class="w-32 h-32 object-cover rounded mb-4">
+        <h2 class="font-semibold text-lg">Broccoli</h2>
+        <p class="text-green-600 font-bold mt-1">₹100 / piece</p>
+        <div class="flex gap-2 mt-3">
+          <button class="px-3 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded transition">Add to Cart</button>
+          <button class="px-3 py-2 bg-green-500 hover:bg-green-600 text-white rounded transition">Buy Now</button>
+        </div>
+      </div>
+
+
+      <div class="bg-[#1c1c1c] rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col items-center">
+        <img src="../assets/images/spinach.png" alt="Spinach" class="w-32 h-32 object-cover rounded mb-4">
+        <h2 class="font-semibold text-lg">Spinach</h2>
+        <p class="text-green-600 font-bold mt-1">₹25 / bunch</p>
+        <div class="flex gap-2 mt-3">
+          <button class="px-3 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded transition">Add to Cart</button>
+          <button class="px-3 py-2 bg-green-500 hover:bg-green-600 text-white rounded transition">Buy Now</button>
+        </div>
+      </div>
+
+
+      <div class="bg-[#1c1c1c] rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col items-center">
+        <img src="../assets/images/cucumber.png" alt="Cucumber" class="w-32 h-32 object-cover rounded mb-4">
+        <h2 class="font-semibold text-lg">Cucumber</h2>
+        <p class="text-green-600 font-bold mt-1">₹40 / kg</p>
+        <div class="flex gap-2 mt-3">
+          <button class="px-3 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded transition">Add to Cart</button>
+          <button class="px-3 py-2 bg-green-500 hover:bg-green-600 text-white rounded transition">Buy Now</button>
+        </div>
+      </div>
+
+
+      <div class="bg-[#1c1c1c] rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col items-center">
+        <img src="../assets/images/lituse.png" alt="Lettuce" class="w-32 h-32 object-cover rounded mb-4">
+        <h2 class="font-semibold text-lg">Lettuce</h2>
+        <p class="text-green-600 font-bold mt-1">₹70 / head</p>
+        <div class="flex gap-2 mt-3">
+          <button class="px-3 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded transition">Add to Cart</button>
+          <button class="px-3 py-2 bg-green-500 hover:bg-green-600 text-white rounded transition">Buy Now</button>
+        </div>
+      </div>
+
+   
+      <div class="bg-[#1c1c1c] rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col items-center">
+        <img src="../assets/images/mango.png" alt="Mango" class="w-32 h-32 object-cover rounded mb-4">
+        <h2 class="font-semibold text-lg">Mango</h2>
+        <p class="text-green-600 font-bold mt-1">₹150 / kg</p>
+        <div class="flex gap-2 mt-3">
+          <button class="px-3 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded transition">Add to Cart</button>
+          <button class="px-3 py-2 bg-green-500 hover:bg-green-600 text-white rounded transition">Buy Now</button>
+        </div>
+      </div>
+
+      
+      <div class="bg-[#1c1c1c] rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col items-center">
+        <img src="../assets/images/pineapple.png" alt="Pineapple" class="w-32 h-32 object-cover rounded mb-4">
+        <h2 class="font-semibold text-lg">Pineapple</h2>
+        <p class="text-green-600 font-bold mt-1">₹90 / piece</p>
+        <div class="flex gap-2 mt-3">
+          <button class="px-3 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded transition">Add to Cart</button>
+          <button class="px-3 py-2 bg-green-500 hover:bg-green-600 text-white rounded transition">Buy Now</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="mt-16 px-6 py-8 border-t border-white/10  bg-[#121212] text-gray-400 text-sm">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-center md:text-left">
+            <h2 class="text-2xl font-semibold">Grocify</h2>
+            <p class="text-sm text-gray-300">Your trusted grocery partner.</p>
+        </div>
+        <div class="flex space-x-6">
+            <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram text-2xl"></i></a>
+            <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-whatsapp text-2xl"></i></a>
+            <a href="#" class="text-gray-300 hover:text-white"><i class="fa-solid fa-headset text-2xl"></i></a>
+        </div>
+        <div class="text-sm text-gray-400 text-center md:text-right leading-relaxed">
+            <p>&copy; 2025 Grocify. All rights reserved.</p>
+            <p>Made with <span class="text-red-500">♥</span> by <a href="https://github.com/codeneeth"
+                    target="_blank" class="text-white font-medium hover:underline">Praneeth</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

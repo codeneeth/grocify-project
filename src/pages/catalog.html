@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grosify</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        crossorigin="anonymous" />
+    <link href="../assets/css/output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-[#121212] text-white font-sans">
+    <!-- Navbar -->
+    <header class="bg-[#121212] shadow-md shadow-black/50 border-b border-white">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">Grosify</div>
+
+            <!-- Desktop nav -->
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="/index.html" class="hover:text-[#f0e741d2]">Home</a>
+                <a href="/src/pages/catalog.html" class="hover:text-[#f0e741d2]">Shop</a>
+                <a href="/orders" class="hover:text-[#f0e741d2]">Orders</a>
+                <a href="/contact" class="hover:text-[#f0e741d2]">Contact</a>
+            </nav>
+
+            <!-- Icons -->
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-search text-lg hover:text-[#f0e741d2] cursor-pointer"></i>
+                <i class="fas fa-shopping-cart text-lg hover:text-[#f0e741d2] cursor-pointer"></i>
+                <i class="fas fa-user text-lg hover:text-[#f0e741d2] cursor-pointer"></i>
+
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden text-white text-xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 space-y-2">
+            <a href="/" class="block hover:text-[#f0e741d2]">Home</a>
+            <a href="/shop" class="block hover:text-[#f0e741d2]">Shop</a>
+            <a href="/orders" class="block hover:text-[#f0e741d2]">Orders</a>
+            <a href="/contact" class="block hover:text-[#f0e741d2]">Contact</a>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="px-6 py-10">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-2">Our Products & Services</h2>
+
+
+            <!-- Categories Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Sample Card -->
+                <div class="bg-[#1c1c1c] p-4 rounded-lg flex flex-col items-center">
+                    <p class="font-extrabold mb-2">Fruits & Vegetables</p>
+                    <img src="../assets/images/fruits.png" alt="Fruits" class="w-20 h-20 object-contain" />
+                    <a href="/src/pages/index-fruits-vegetables.html"> <button
+                            class="mt-4 text-sm text-black bg-[#f0e741] hover:bg-[#f0e741d2] px-3 py-1 rounded font-semibold">View</button>
+                    </a>
+                </div>
+
+                <div class="bg-[#1c1c1c] p-4 rounded-lg flex flex-col items-center">
+                    <p class="font-semibold mb-2">Dairy & Eggs</p>
+                    <img src="../assets/images/dairy_eggs.png" alt="Dairy" class="w-20 h-20 object-contain" />
+                   <a href="/src/pages/index-dairy-eggs.html"> <button
+                        class="mt-4 text-sm text-black bg-[#f0e741] hover:bg-[#f0e741d2] px-3 py-1 rounded font-semibold">View</button> </a>
+                </div>
+
+                <div class="bg-[#1c1c1c] p-4 rounded-lg flex flex-col items-center">
+                    <p class="font-extrabold mb-2">Snacks & Beverages</p>
+                    <img src="../assets/images/snacks_beverages.png" alt="Snacks" class="w-20 h-20 object-contain" />
+                    <button
+                        class="mt-4 text-sm text-black bg-[#f0e741] hover:bg-[#f0e741d2] px-3 py-1 rounded font-semibold">View</button>
+                </div>
+
+                <div class="bg-[#1c1c1c] p-4 rounded-lg flex flex-col items-center">
+                    <p class="font-extrabold mb-2">Personal Care</p>
+                    <img src="../assets/images/personal_care.png" alt="Personal Care"
+                        class="w-20 h-20 object-contain" />
+                    <button
+                        class="mt-4 text-sm text-black bg-[#f0e741] hover:bg-[#f0e741d2] px-3 py-1 rounded font-semibold">View</button>
+                </div>
+
+                <div class="bg-[#1c1c1c] p-4 rounded-lg flex flex-col items-center">
+                    <p class="font-extrabold mb-2">Household Essentials</p>
+                    <img src="../assets/images/household_essentials.png" alt="Household"
+                        class="w-20 h-20 object-contain" />
+                    <button
+                        class="mt-4 text-sm text-black bg-[#f0e741] hover:bg-[#f0e741d2] px-3 py-1 rounded font-semibold">View</button>
+                </div>
+
+                <div class="bg-[#1c1c1c] p-4 rounded-lg flex flex-col items-center">
+                    <p class="font-extrabold mb-2">Health Supplements</p>
+                    <img src="../assets/images/health.png" alt="Subscription" class="w-20 h-20 object-contain" />
+                    <button
+                        class="mt-4 text-sm text-black bg-[#f0e741] hover:bg-[#f0e741d2] px-3 py-1 rounded font-semibold">View</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-16 px-6 py-8 border-t border-white/10  bg-[#121212] text-gray-400 text-sm">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h2 class="text-2xl font-semibold">Grosify</h2>
+                <p class="text-sm text-gray-300">Your trusted grocery partner.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram text-2xl"></i></a>
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-whatsapp text-2xl"></i></a>
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fa-solid fa-headset text-2xl"></i></a>
+            </div>
+            <div class="text-sm text-gray-400 text-center md:text-right leading-relaxed">
+                <p>&copy; 2025 Grosify. All rights reserved.</p>
+                <p>Made with <span class="text-red-500">♥</span> by <a href="https://github.com/codeneeth"
+                        target="_blank" class="text-white font-medium hover:underline">Praneeth</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
