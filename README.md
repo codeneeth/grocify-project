@@ -1,12 +1,12 @@
-# Grosify
+# Grocify
 
-**Grosify** is a work-in-progress grocery website layout built with **HTML** and **Tailwind CSS**.
+**Grocify** is a work-in-progress grocery website layout built with **HTML** and **Tailwind CSS**.
 
 > **Note:** This project is currently **incomplete** and under development.
 
 ## Overview
 
-Grosify aims to be a clean and modern grocery shopping site layout, focusing on simplicity, usability, and clean design.
+Grocify aims to be a clean and modern grocery shopping site layout, focusing on simplicity, usability, and clean design.
 
 ## Current Status
 
