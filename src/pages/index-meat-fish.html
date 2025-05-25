@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grocify - Dairy & Eggs</title>
+  <title>Grocify - Meat & Fish</title>
   <link rel="stylesheet" href="../assets/css/output.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body class="bg-gray-50 font-sans">
@@ -20,15 +21,15 @@
 
       <nav class="hidden md:flex space-x-8">
         <a href="/index.html" class="nav-link text-gray-700 font-medium">Home</a>
-        <a href="../pages/index-dairy-eggs.html" class="nav-link text-green-600 font-medium">Shop</a>
-        <a href="../pages/about.html" class="nav-link text-gray-700 font-medium">About</a>
-        <a href="../pages/contact.html" class="nav-link text-gray-700 font-medium">Contact</a>
+        <a href="#" class="nav-link text-green-600 font-medium">Shop</a>
+        <a href="#" class="nav-link text-gray-700 font-medium">About</a>
+        <a href="#" class="nav-link text-gray-700 font-medium">Contact</a>
       </nav>
       <div class="flex items-center space-x-5">
         <a href="#" class="text-gray-700 hover:text-green-600">
           <i class="fas fa-search"></i>
         </a>
-        <a href="../pages/cart.html" class="text-gray-700 hover:text-green-600 relative">
+        <a href="#" class="text-gray-700 hover:text-green-600 relative">
           <i class="fas fa-shopping-cart"></i>
           <span id="cartCount"
             class="absolute -top-2 -right-2 bg-green-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center"></span>
@@ -40,8 +41,8 @@
   <!-- Page Header -->
   <div class="bg-green-600 text-white py-12">
     <div class="container mx-auto px-4 text-center">
-      <h1 class="text-3xl md:text-4xl font-bold mb-4">Dairy & Eggs</h1>
-      <p class="text-lg">Fresh dairy products and farm eggs</p>
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">Meat & Fish</h1>
+      <p class="text-lg">Premium quality meats and fresh seafood</p>
     </div>
   </div>
 
@@ -54,15 +55,15 @@
         </button>
         <button
           class="bg-white border border-gray-300 px-5 py-2 rounded-full font-medium whitespace-nowrap hover:bg-gray-50">
-          <i class="fas fa-egg mr-2 text-yellow-500"></i>Eggs
+          <i class="fas fa-drumstick-bite mr-2 text-red-500"></i>Chicken
         </button>
         <button
           class="bg-white border border-gray-300 px-5 py-2 rounded-full font-medium whitespace-nowrap hover:bg-gray-50">
-          <i class="fas fa-wine-bottle mr-2 text-blue-500"></i>Milk
+          <i class="fas fa-hamburger mr-2 text-amber-700"></i>Mutton
         </button>
         <button
           class="bg-white border border-gray-300 px-5 py-2 rounded-full font-medium whitespace-nowrap hover:bg-gray-50">
-          <i class="fas fa-cheese mr-2 text-orange-500"></i>Cheese
+          <i class="fas fa-fish mr-2 text-blue-400"></i>Seafood
         </button>
         <button
           class="bg-white border border-gray-300 px-5 py-2 rounded-full font-medium whitespace-nowrap hover:bg-gray-50">
@@ -79,17 +80,17 @@
       <div class="product-card bg-white rounded-lg overflow-hidden">
         <div class="relative">
           <img
-            src="https://images.unsplash.com/photo-1587486913049-53fc88980cfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-            alt="Farm Eggs" class="w-full h-48 object-cover">
-          <div class="absolute top-3 left-3 bg-green-600 text-white text-xs px-2 py-1 rounded-full">Farm Fresh</div>
+            src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Chicken Breast" class="w-full h-48 object-cover">
+          <div class="absolute top-3 left-3 bg-green-600 text-white text-xs px-2 py-1 rounded-full">Fresh</div>
         </div>
         <div class="p-4">
-          <h3 class="font-bold text-gray-800 mb-1">Farm Eggs</h3>
-          <p class="text-sm text-gray-600 mb-3">12 pcs | Free Range</p>
+          <h3 class="font-bold text-gray-800 mb-1">Chicken Breast</h3>
+          <p class="text-sm text-gray-600 mb-3">500g | Skinless Boneless</p>
           <div class="flex justify-between items-center">
-            <span class="font-bold text-green-600">₹70</span>
-            <button id="addon-1"
-              class=" add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
+            <span class="font-bold text-green-600">₹220</span>
+            <button
+              class="add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
           </div>
@@ -100,16 +101,16 @@
       <div class="product-card bg-white rounded-lg overflow-hidden">
         <div class="relative">
           <img
-            src="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-            alt="Milk" class="w-full h-48 object-cover">
-          <div class="absolute top-3 left-3 bg-blue-500 text-white text-xs px-2 py-1 rounded-full">Fresh</div>
+            src="https://images.unsplash.com/photo-1559314809-0d155014e29e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Mutton Curry Cut" class="w-full h-48 object-cover">
+          <div class="absolute top-3 left-3 bg-amber-700 text-white text-xs px-2 py-1 rounded-full">Premium</div>
         </div>
         <div class="p-4">
-          <h3 class="font-bold text-gray-800 mb-1">Fresh Milk</h3>
-          <p class="text-sm text-gray-600 mb-3">1 Liter | Pasteurized</p>
+          <h3 class="font-bold text-gray-800 mb-1">Mutton Curry Cut</h3>
+          <p class="text-sm text-gray-600 mb-3">500g | Tender Pieces</p>
           <div class="flex justify-between items-center">
-            <span class="font-bold text-green-600">₹50</span>
-            <button id="addon-1"
+            <span class="font-bold text-green-600">₹450</span>
+            <button
               class="add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
@@ -121,16 +122,16 @@
       <div class="product-card bg-white rounded-lg overflow-hidden">
         <div class="relative">
           <img
-            src="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-            alt="Cheese" class="w-full h-48 object-cover">
-          <div class="absolute top-3 left-3 bg-orange-500 text-white text-xs px-2 py-1 rounded-full">Imported</div>
+            src="https://images.unsplash.com/photo-1518492104633-130d0cc84637?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Salmon Fillet" class="w-full h-48 object-cover">
+          <div class="absolute top-3 left-3 bg-blue-500 text-white text-xs px-2 py-1 rounded-full">Sea Fresh</div>
         </div>
         <div class="p-4">
-          <h3 class="font-bold text-gray-800 mb-1">Cheddar Cheese</h3>
-          <p class="text-sm text-gray-600 mb-3">200g | Block</p>
+          <h3 class="font-bold text-gray-800 mb-1">Chicken Curry cut</h3>
+          <p class="text-sm text-gray-600 mb-3">300g | fresh</p>
           <div class="flex justify-between items-center">
-            <span class="font-bold text-green-600">₹120</span>
-            <button id="addon-1"
+            <span class="font-bold text-green-600">₹850</span>
+            <button
               class="add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
@@ -142,16 +143,17 @@
       <div class="product-card bg-white rounded-lg overflow-hidden">
         <div class="relative">
           <img
-            src="https://images.unsplash.com/photo-1603569293049-53fc88980cfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-            alt="Butter" class="w-full h-48 object-cover">
+            src="https://images.unsplash.com/photo-1509410366603-88eec8f3f770?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Prawns" class="w-full h-48 object-cover">
+          <div class="absolute top-3 left-3 bg-pink-500 text-white text-xs px-2 py-1 rounded-full">Jumbo</div>
         </div>
         <div class="p-4">
-          <h3 class="font-bold text-gray-800 mb-1">Salted Butter</h3>
-          <p class="text-sm text-gray-600 mb-3">100g | Amul</p>
+          <h3 class="font-bold text-gray-800 mb-1">Fresh Prawns</h3>
+          <p class="text-sm text-gray-600 mb-3">250g | Peeled & Deveined</p>
           <div class="flex justify-between items-center">
-            <span class="font-bold text-green-600">₹45</span>
-            <button id="addon-1"
-              class=" add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
+            <span class="font-bold text-green-600">₹320</span>
+            <button
+              class="add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
           </div>
@@ -162,17 +164,16 @@
       <div class="product-card bg-white rounded-lg overflow-hidden">
         <div class="relative">
           <img
-            src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-            alt="Curd" class="w-full h-48 object-cover">
-          <div class="absolute top-3 left-3 bg-green-600 text-white text-xs px-2 py-1 rounded-full">Homemade</div>
+            src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Chicken Legs" class="w-full h-48 object-cover">
         </div>
         <div class="p-4">
-          <h3 class="font-bold text-gray-800 mb-1">Fresh Curd</h3>
-          <p class="text-sm text-gray-600 mb-3">500g | Traditional</p>
+          <h3 class="font-bold text-gray-800 mb-1">Chicken Legs</h3>
+          <p class="text-sm text-gray-600 mb-3">500g | Skin On</p>
           <div class="flex justify-between items-center">
-            <span class="font-bold text-green-600">₹40</span>
-            <button id="addon-1"
-              class=" add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
+            <span class="font-bold text-green-600">₹180</span>
+            <button
+              class="add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
           </div>
@@ -183,15 +184,16 @@
       <div class="product-card bg-white rounded-lg overflow-hidden">
         <div class="relative">
           <img
-            src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-            alt="Paneer" class="w-full h-48 object-cover">
+            src="https://images.unsplash.com/photo-1559598467-f8b76c8155d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Mince Meat" class="w-full h-48 object-cover">
+          <div class="absolute top-3 left-3 bg-red-600 text-white text-xs px-2 py-1 rounded-full">Lean</div>
         </div>
         <div class="p-4">
-          <h3 class="font-bold text-gray-800 mb-1">Fresh Paneer</h3>
-          <p class="text-sm text-gray-600 mb-3">200g | Homemade</p>
+          <h3 class="font-bold text-gray-800 mb-1">Chicken wings</h3>
+          <p class="text-sm text-gray-600 mb-3">500g | Freshly Ground</p>
           <div class="flex justify-between items-center">
-            <span class="font-bold text-green-600">₹60</span>
-            <button id="addon-1"
+            <span class="font-bold text-green-600">₹200</span>
+            <button
               class="add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
@@ -203,16 +205,16 @@
       <div class="product-card bg-white rounded-lg overflow-hidden">
         <div class="relative">
           <img
-            src="https://images.unsplash.com/photo-1582284540020-8acbe03f4924?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-            alt="Yogurt" class="w-full h-48 object-cover">
-          <div class="absolute top-3 left-3 bg-purple-500 text-white text-xs px-2 py-1 rounded-full">Greek</div>
+            src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Fish Fillet" class="w-full h-48 object-cover">
+          <div class="absolute top-3 left-3 bg-blue-400 text-white text-xs px-2 py-1 rounded-full">Boneless</div>
         </div>
         <div class="p-4">
-          <h3 class="font-bold text-gray-800 mb-1">Greek Yogurt</h3>
-          <p class="text-sm text-gray-600 mb-3">200g | Protein Rich</p>
+          <h3 class="font-bold text-gray-800 mb-1">Appollo fish</h3>
+          <p class="text-sm text-gray-600 mb-3">500g | Freshly cut</p>
           <div class="flex justify-between items-center">
-            <span class="font-bold text-green-600">₹80</span>
-            <button id="addon-1"
+            <span class="font-bold text-green-600">₹380</span>
+            <button
               class="add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
@@ -224,16 +226,17 @@
       <div class="product-card bg-white rounded-lg overflow-hidden">
         <div class="relative">
           <img
-            src="https://images.unsplash.com/photo-1594282486552-96d9df6a8a8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-            alt="Cream" class="w-full h-48 object-cover">
+            src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Sausages" class="w-full h-48 object-cover">
+          <div class="absolute top-3 left-3 bg-purple-500 text-white text-xs px-2 py-1 rounded-full">Gourmet</div>
         </div>
         <div class="p-4">
-          <h3 class="font-bold text-gray-800 mb-1">Fresh Cream</h3>
-          <p class="text-sm text-gray-600 mb-3">200ml | Dairy</p>
+          <h3 class="font-bold text-gray-800 mb-1">Chicken Breast</h3>
+          <p class="text-sm text-gray-600 mb-3">250g | Breast</p>
           <div class="flex justify-between items-center">
-            <span class="font-bold text-green-600">₹65</span>
-            <button id="addon-1"
-              class=" add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
+            <span class="font-bold text-green-600">₹90</span>
+            <button
+              class="add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
           </div>
@@ -250,14 +253,14 @@
           <div class="flex items-center mb-4">
             <span class="text-2xl font-bold text-green-400">Grocify</span>
           </div>
-          <p class="text-gray-400 mb-4">Fresh groceries delivered to your doorstep with care and convenience.</p>
+          <p class="text-gray-400 mb-4">Premium quality meats and seafood, delivered fresh to your home.</p>
         </div>
 
         <div>
           <h3 class="text-lg font-bold mb-4">Quick Links</h3>
           <ul class="space-y-2">
             <li><a href="../index.html" class="text-gray-400 hover:text-white">Home</a></li>
-            <li><a href="#" class="text-white hover:text-white">Shop</a></li>
+            <li><a href="#" class="text-green-400 hover:text-white">Shop</a></li>
             <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
             <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
           </ul>
@@ -266,12 +269,13 @@
         <div>
           <h3 class="text-lg font-bold mb-4">Categories</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="text-green-400 hover:text-white"> Dairy & Eggs</a></li>
-            <li><a href="./index-fruits-vegetables.html" class="text-gray-400 hover:text-white">Fruits & Vegetables</a>
-            </li>
+            <li><a href="./index-meat-fish.html" class="text-green-400 hover:text-white">Meat & Fish</a></li>
             <li><a href="./index-snacks-beverages.html" class="text-gray-400 hover:text-white">Snacks & Beverages</a>
             </li>
-            <li><a href="./index-meat-fish.html" class="text-gray-400 hover:text-white">Meat & Fish</a></li>
+            <li><a href="./index-dairy-eggs.html" class="text-gray-400 hover:text-white"> Dairy & Eggs</a></li>
+            <li><a href="./index-fruits-vegetables.html" class="text-gray-400 hover:text-white">Fruits & Vegetables</a>
+            </li>
+
           </ul>
         </div>
 
@@ -295,7 +299,6 @@
         <p>Made with <span class="text-red-500">♥</span> by
           <a href="https://github.com/codeneeth" target="_blank" class="text-green-400 hover:underline">Praneeth</a>
         </p>
-
       </div>
     </div>
   </footer>

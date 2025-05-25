@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../assets/css/output.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  
+
 </head>
 
 <body class="bg-gray-50 font-sans">
@@ -21,7 +21,7 @@
 
       <nav class="hidden md:flex space-x-8">
         <a href="/index.html" class="nav-link text-gray-700 font-medium">Home</a>
-        <a href="#" class="nav-link text-green-600 font-medium ">Shop</a>
+        <a href="#" class="nav-link text-green-600  font-medium ">Shop</a>
         <a href="#" class="nav-link text-gray-700 font-medium">About</a>
         <a href="#" class="nav-link text-gray-700 font-medium">Contact</a>
       </nav>
@@ -31,8 +31,8 @@
         </a>
         <a href="#" class="text-gray-700 hover:text-green-600 relative">
           <i class="fas fa-shopping-cart"></i>
-          <span
-            class="absolute -top-2 -right-2 bg-green-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
+          <span id="cartCount"
+            class="absolute -top-2 -right-2 bg-green-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center"></span>
         </a>
       </div>
     </div>
@@ -89,8 +89,8 @@
           <p class="text-sm text-gray-600 mb-3">1 kg | Kashmir</p>
           <div class="flex justify-between items-center">
             <span class="font-bold text-green-600">₹120</span>
-            <button
-              class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
+            <button id="addon-1"
+              class=" add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
           </div>
@@ -109,8 +109,8 @@
           <p class="text-sm text-gray-600 mb-3">1 dozen | Local</p>
           <div class="flex justify-between items-center">
             <span class="font-bold text-green-600">₹45</span>
-            <button
-              class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
+            <button id="addon-1" class="add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center
+              hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
           </div>
@@ -130,8 +130,8 @@
           <p class="text-sm text-gray-600 mb-3">1 kg | Ratnagiri</p>
           <div class="flex justify-between items-center">
             <span class="font-bold text-green-600">₹180</span>
-            <button
-              class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
+            <button id="addon-1"
+              class=" add-to-cartbg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
           </div>
@@ -142,7 +142,7 @@
       <div class="product-card bg-white rounded-lg overflow-hidden">
         <div class="relative">
           <img
-            src="https://images.unsplash.com/photo-1592841200221-a6895f5c4b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            src="https://unsplash.com/photos/closeup-photo-of-red-tomatoes-iASD5_HpTZc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
             alt="Tomatoes" class="w-full h-48 object-cover">
         </div>
         <div class="p-4">
@@ -150,8 +150,8 @@
           <p class="text-sm text-gray-600 mb-3">500 g | Local</p>
           <div class="flex justify-between items-center">
             <span class="font-bold text-green-600">₹25</span>
-            <button
-              class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
+            <button id="addon-1"
+              class=" add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
           </div>
@@ -170,8 +170,8 @@
           <p class="text-sm text-gray-600 mb-3">1 kg | Local</p>
           <div class="flex justify-between items-center">
             <span class="font-bold text-green-600">₹30</span>
-            <button
-              class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
+            <button id="addon-1"
+              class=" add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
           </div>
@@ -190,8 +190,8 @@
           <p class="text-sm text-gray-600 mb-3">500 g | Local</p>
           <div class="flex justify-between items-center">
             <span class="font-bold text-green-600">₹35</span>
-            <button
-              class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
+            <button id="addon-1"
+              class="add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
           </div>
@@ -211,8 +211,8 @@
           <p class="text-sm text-gray-600 mb-3">250 g | Organic</p>
           <div class="flex justify-between items-center">
             <span class="font-bold text-green-600">₹20</span>
-            <button
-              class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
+            <button id="addon-1"
+              class=" add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
           </div>
@@ -231,8 +231,8 @@
           <p class="text-sm text-gray-600 mb-3">3 pcs | Medium</p>
           <div class="flex justify-between items-center">
             <span class="font-bold text-green-600">₹90</span>
-            <button
-              class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
+            <button id="addon-1"
+              class="add-to-cart bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-green-700">
               <i class="fas fa-plus"></i>
             </button>
           </div>
@@ -257,7 +257,7 @@
           <h3 class="text-lg font-bold mb-4">Quick Links</h3>
           <ul class="space-y-2">
             <li><a href="/index.html" class="text-gray-400 hover:text-white">Home</a></li>
-            <li><a href="#catalog" class="text-white hover:text-white">Shop</a></li>
+            <li><a href="#catalog" class="text-green-400 hover:text-white">Shop</a></li>
             <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
             <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
           </ul>
@@ -266,10 +266,12 @@
         <div>
           <h3 class="text-lg font-bold mb-4">Categories</h3>
           <ul class="space-y-2">
-            
-            <li><a href="#" class="text-gray-400 hover:text-white">Fruits & Vegetables</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Dairy</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Meat & Fish</a></li>
+
+            <li><a href="#" class="text-green-400  hover:text-white">Fruits & Vegetables</a></li>
+            <li><a href="./index-dairy-eggs.html" class="text-gray-400 hover:text-white">Dairy</a></li>
+            <li><a href="./index-meat-fish.html" class="text-gray-400 hover:text-white">Meat & Fish</a></li>
+            <li><a href="./index-snacks-beverages.html" class="text-gray-400 hover:text-white">Snacks & Beverages</a>
+            </li>
           </ul>
         </div>
 
@@ -289,10 +291,16 @@
       </div>
 
       <div class="border-t border-gray-700 pt-8 text-center">
-        <p class="text-gray-400">© 2025 Grocify. All rights reserved.</p>
+        <p class="text-gray-400">© 2025 Grocify. All rights reserved.</p> <br>
+        <p>Made with <span class="text-red-500">♥</span> by
+          <a href="https://github.com/codeneeth" target="_blank" class="text-green-400 hover:underline">Praneeth</a>
+        </p>
+
       </div>
     </div>
   </footer>
+
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
